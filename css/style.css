@@ -1,0 +1,120 @@
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  /*para nao ter barra de rolagem na horizontal*/
+ 
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .contato {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: var(--dourado);
+    cursor: pointer;
+  }
+
+  nav ul li a {
+    color: var(--dourado);
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: #daa520;
+  }
+  
+  :root {
+    --orange: #f78b00;
+    --dourado: #daa520;
+    --gray: #ededed;
+  }
+
+  nav ul button {
+    border: 1px solid var(--dourado);
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: var(--dourado);
+    font-weight: bold;
+    border-radius: 4px;
+  }
+.text {
+    color: #daa520;
+  }
+
+  .principal {
+    color: #daa520;
+    text-align: center;
+  }
+
+  .pesquisa {
+    width: 40opx;
+    display: block;
+    margin-left: 60px;
+  }
+
+  #barra {
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    border:#daa520 4px solid;
+    border-radius: 15px;
+    outline: none;
+  }
+  .marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .marca {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .marca h3 {
+    font-size: 24px;
+  }
+  
+  .marca button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+  }

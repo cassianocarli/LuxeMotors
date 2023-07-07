@@ -1,0 +1,158 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  /*para nao ter barra de rolagem na horizontal*/
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    /*torna flexivel a posição das imagens e textos
+    fazendo assim com que se adapte em diferentes telas
+    ficando mais responsivo*/
+  }
+
+  nav ul li {
+    list-style: none;
+    /* none para tirar os pontos antes dos nomes*/
+    padding: 10px;
+    /*padding pra posicionar ps elementos*/
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+
+  .contato {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /*definindo as margens com max widht e min width, para
+    deicar o site mais responsivo, pois assim o site se adequa
+    as outras telas*/
+  }
+
+  nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    /* ajuda a distribuir os itens em linha */
+    align-items: center;
+    /*alinhar os items*/
+    justify-content: space-between;
+    /*o space between praticamerte distribui os itens no
+    espaço disponivel*/
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: var(--dourado);
+    cursor: pointer;
+    /*pra mudar o ponteiro quando passa pelo logo*/
+  }
+
+  nav ul li a {
+    color: var(--dourado);
+    text-decoration: none;
+    /*tira as linhas embaixo da lista*/
+  }
+
+  nav ul li a {
+    color: #daa520;
+  }
+  
+  :root {
+    --orange: #f78b00;
+    --dourado: #daa520;
+    --gray: #ededed;
+    /*declarando as cores como variavel, usei root para declarar
+    as variaveis*/
+  }
+
+  nav ul button {
+    border: 1px solid var(--dourado);
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: var(--dourado);
+    font-weight: bold;
+    border-radius: 4px;
+    /* arrumando o botão de login */
+  }
+.text {
+    color: #daa520;
+  }
+
+  .principal {
+    color: #daa520;
+    text-align: center;
+    
+    /*definindo as cores do 'catalogo audi'*/
+  }
+
+  .pesquisa {
+    width: 40opx;
+    display: block;
+    margin-left: 60px;
+    /*configurando a barra de pesquisa*/
+  }
+
+  #barra {
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    border:#daa520 4px solid;
+    border-radius: 15px;
+     /*configurando a barra de pesquisa*/
+  }
+
+.produto { 
+ cursor: pointer; 
+/*configurando o ponteiro quando passa por cima do carro&*/
+}
+
+
+.produto p {
+    background-color: #daa520;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    /*configurando os blocos de legenda do carro*/
+}
+
+
+.produto p:hover {
+    transform: rotate(-2deg);  
+    /*uso o transform rotate para que quando eu passe o ponteiro em cima
+    da legenda ela gire*/  
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*configurando para cada bloco ficar na sua legenda
+    e usando o display flex pra ficar responsivo*/
+}
+  
+.flooter {
+    text-align:center;
+    font-size: large;
+}
+
+.flooter3{
+    text-align: center;
+    font-size:medium
+}
+
+/*configurando o flooter*/
